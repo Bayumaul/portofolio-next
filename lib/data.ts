@@ -33,14 +33,14 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
-
 export const experiencesData = [
   {
-    title: "Back End Developer",
-    location: "Surabaya",
-    description: "- Contribute to the management of the Zeniora website",
+    title: "Graduated bootcamp",
+    location: "Miami, FL",
+    description:
+      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021",
+    date: "2019",
   },
   {
     title: "Front-End Developer",
