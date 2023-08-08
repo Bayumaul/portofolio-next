@@ -10,9 +10,13 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Bayu Maulana Ikhsan | Personal Portfolio",
+  title: "Bayu Maulana Ikhsan | Portfolio",
   description:
-    "Bayu Maulana Ikhsan is a full-stack developer with 2 years of experience.",
+    "Bayu Maulana Ikhsan is a laravel developer with 2 years of experience.",
+  author: "Bayu Maulana Ikhsan",
+  keywords: "Bayu Maulana Ikhsan, Laravel, Website, Web developer, Codeigneter",
+  subject: "Bayu Maulana Ikhsan Web Developer",
+  copyright: "Bayu Maulana Ikhsan",
 };
 
 export default function RootLayout({
