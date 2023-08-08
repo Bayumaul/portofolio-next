@@ -13,3 +13,39 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+.bg-1 {
+  /* --something: 2px !important; */
+  /* inset:0; */
+  /* padding:var(--something); */
+  /* opacity:var(--something-opa); */
+  background: linear-gradient(
+      135deg,
+      #0285c7aa 5%,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    ),
+    linear-gradient(
+      300deg,
+      #0284c7 10%,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    );
+  content: "";
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: absolute;
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(black, black) content-box content-box,
+    linear-gradient(black, black);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

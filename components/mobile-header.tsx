@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
+import { AiOutlineMenu } from "react-icons/ai";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 
@@ -15,9 +15,9 @@ export default function MobileHeader() {
       <button
         onClick={() => setOpen((open) => !open)}
         type="button"
-        className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+        className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-md focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
       >
-        <BiMenuAltRight />
+        <AiOutlineMenu />
       </button>
 
       <motion.div
