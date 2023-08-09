@@ -11,7 +11,16 @@ export default function Projects() {
 
   return (
     <section id="projects" ref={ref} className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>🚀 Projects</SectionHeading>
+      {/* <div>
+        <h1 className="text-center w-[min(100%,38rem)]">
+          I am pleased to present my portfolio to you. In this portfolio, you
+          will find a collection of works that reflect my dedication,
+          creativity, and skills in the field I specialize in. I hope this
+          portfolio can provide a comprehensive overview of my abilities and
+          potential.
+        </h1>
+      </div> */}
       <div className="row">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>

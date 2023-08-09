@@ -19,16 +19,11 @@ export default function About() {
     >
       <SectionHeading>👨‍💻 About Me</SectionHeading>
       <p>
-        I am website developer with 2 years of experience in website
-        development, using Laravel for developing a website and web
-        applications.I am a graduate of AMIKOM Yogyakarta University majoring in
-        Information Systems. I have the ability to program using{" "}
-        <span className="font-medium">
-          Scrum, Bootstrap, Tailwind, Jquery, PHP, laravel, Codeigniter, MYSQL,
-          and Git.
-        </span>{" "}
-        Have good analytical and communication skills and be able to work
-        individually or in a team.
+        Hello, I'm Bayu! I am dedicated to continuously expanding my knowledge
+        and skills in{" "}
+        <span className="font-medium">fullstack web development </span> while
+        also learning about new technologies. I am proficient in developing web
+        applications, creating APIs, and striving to deliver high-quality code.
       </p>
     </motion.section>
   );
