@@ -1,5 +1,6 @@
 {
-  "name": "portofolio-next",
+  "name": "portofolio-bayumaul",
+  "author": "Bayu Maulana Ikhsan <bayu.maulanaikhsan123@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "scripts": {

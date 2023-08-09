@@ -28,15 +28,15 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            {/* <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
+            <Image
+              src="/images/profile.png"
+              alt="Bayu Maulana Ikhsan"
               width="192"
               height="192"
               quality="95"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            /> */}
+            />
           </motion.div>
           <motion.span
             className="absolute bottom-0 right-0 text-4xl"
@@ -53,17 +53,26 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-5 mt-3 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Bayu Maulana Ikhsan.</span> I'm a{" "}
-        <span className="font-bold">website developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience.
-        {/* I enjoy */}
-        {/* building <span className="italic">sites & apps</span>. My focus is
-        <span className="underline"> Laravel and React (Next.js)</span>. */}
+        <span className="font-bold">Bayu Maulana Ikhsan.</span>
       </motion.h1>
+      <motion.h4
+        className="mb-10 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        I'm a <span className="font-bold">website developer</span> with{" "}
+        <span className="font-bold">2 years</span> of experience <br /> in
+        fullstack development, using{" "}
+        <span className="font-bold">Laravel and Codeigneter</span> for
+        developing a website and web applications.
+        {/* I enjoy building <span className="italic">sites & apps</span>.  */}
+        {/* My focus is
+        <span className="underline"> Laravel and React (Next.js)</span>. */}
+      </motion.h4>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
