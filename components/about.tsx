@@ -22,9 +22,10 @@ export default function About() {
         I am website developer with 2 years of experience in website
         development, using Laravel for developing a website and web
         applications.I am a graduate of AMIKOM Yogyakarta University majoring in
-        Information Systems. I have the ability to program using
+        Information Systems. I have the ability to program using{" "}
         <span className="font-medium">
-          Scrum, Javascript, Jquery, PHP, laravel, Codeigniter, MYSQL, and Git.
+          Scrum, Bootstrap, Tailwind, Jquery, PHP, laravel, Codeigniter, MYSQL,
+          and Git.
         </span>
         . Have good analytical and communication skills and be able to work
         individually or in a team.
