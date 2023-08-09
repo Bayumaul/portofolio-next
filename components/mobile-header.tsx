@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { CgMenuRightAlt } from "react-icons/cg";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ export default function MobileHeader() {
         type="button"
         className="bg-white border-none bg-opacity-60 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-md focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
       >
-        <AiOutlineMenu />
+        <CgMenuRightAlt />
       </button>
 
       <motion.div
