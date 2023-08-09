@@ -75,6 +75,11 @@ export const projectsData = [
       "Wartafeno is a website that is used to convey news from the LPMT Fenomena of UNY, this website was made using wordpress and elementor and mysql database.",
     tags: ["Wordpress", "SQL", "Elementor", "PHP"],
     imageUrl: wartafenoImg,
+    tech: [
+      "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8a/Elementor_icon.svg",
+      "/images/icon/mysql.svg",
+    ],
   },
   {
     title: "HR-TOOLS",
@@ -82,6 +87,13 @@ export const projectsData = [
       "This is HR TOOLS which is used to manage employee data, starting from personal data, employee performance appraisal work to the attendance system.",
     tags: ["PHP", "CodeIgneter", "MySql", "JQuery", "Leaflet JS"],
     imageUrl: hrtoolsImg,
+    tech: [
+      "/images/icon/bootstrap.svg",
+      "/images/icon/leaflet.svg",
+      "/images/icon/codeigniter.svg",
+      "/images/icon/jquery-vertical.svg",
+      "/images/icon/mysql.svg",
+    ],
   },
   // {
   //   title: "Sistem Informasi Akademik SDN Tegalrandu",
@@ -159,4 +171,9 @@ export const skilss = [
     imgUrl:
       "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
   },
+  // {
+  //   id: 10,
+  //   imgUrl:
+  //     "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg",
+  // },
 ] as const;
