@@ -17,7 +17,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>👨‍💻 About Me</SectionHeading>
       <p>
         I am website developer with 2 years of experience in website
         development, using Laravel for developing a website and web

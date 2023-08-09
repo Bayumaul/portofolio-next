@@ -114,3 +114,49 @@ export const skillsData = [
   "Git",
   // "Framer Motion",
 ] as const;
+
+export const skilss = [
+  {
+    id: 2,
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+  },
+  {
+    id: 3,
+    imgUrl: "/images/icon/bootstrap.svg",
+  },
+  {
+    id: 8,
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+  },
+  {
+    id: 4,
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+  },
+  {
+    id: 5,
+    imgUrl: "/images/icon/codeigniter.svg",
+  },
+  {
+    id: 7,
+    imgUrl: "/images/icon/mysql.svg",
+  },
+
+  {
+    id: 9,
+    imgUrl: "/images/icon/typescript.svg",
+  },
+  {
+    id: 10,
+    imgUrl: "/images/icon/javascript.svg",
+  },
+  {
+    id: 1,
+    imgUrl: "/images/icon/jquery-vertical.svg",
+  },
+  {
+    id: 6,
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+  },
+] as const;
