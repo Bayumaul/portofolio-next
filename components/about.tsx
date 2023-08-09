@@ -26,8 +26,8 @@ export default function About() {
         <span className="font-medium">
           Scrum, Bootstrap, Tailwind, Jquery, PHP, laravel, Codeigniter, MYSQL,
           and Git.
-        </span>
-        . Have good analytical and communication skills and be able to work
+        </span>{" "}
+        Have good analytical and communication skills and be able to work
         individually or in a team.
       </p>
     </motion.section>
