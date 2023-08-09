@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { RiMailSendLine } from "react-icons/ri";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
@@ -114,6 +115,13 @@ export default function Intro() {
           <BsLinkedin />
         </a>
 
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="mailto:bayu.maulanaikhsan123@gmail.com"
+          target="_blank"
+        >
+          <RiMailSendLine />
+        </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/Bayumaul"
