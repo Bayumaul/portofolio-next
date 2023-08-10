@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import BurstBload from "./burst-bload";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -17,7 +18,10 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>👨‍💻 About Me</SectionHeading>
+      <div className="flex justify-center">
+        <SectionHeading>👨‍💻 About Me</SectionHeading>
+        <BurstBload />
+      </div>
       <p>
         Hello, I'm Bayu! I am dedicated to continuously expanding my knowledge
         and skills in{" "}

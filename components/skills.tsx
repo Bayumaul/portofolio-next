@@ -6,6 +6,7 @@ import { skillsData, skilss } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import BurstBload2 from "./burst-bload-2";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -32,7 +33,11 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>🎯 Specialized Skills</SectionHeading>
+      <div className="flex justify-center">
+        <SectionHeading>🎯 Specialized Skills</SectionHeading>
+        <BurstBload2 />
+      </div>
+
       {/* <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

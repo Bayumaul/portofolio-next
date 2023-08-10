@@ -70,6 +70,19 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "SIAKAD SDN Tegalrandu",
+    description:
+      "This is a web-based application about creating report students, crud kelas, crud mata pelajaran, crud siswa, crud nilai students to report with kurikulum 2013",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    imageUrl: siakadImg,
+    tech: [
+      "/images/icon/bootstrap.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+      "/images/icon/jquery-vertical.svg",
+      "/images/icon/mysql.svg",
+    ],
+  },
+  {
     title: "Wartafeno",
     description:
       "Wartafeno is a website that is used to convey news from the LPMT Fenomena of UNY, this website was made using wordpress and elementor and mysql database.",
@@ -95,13 +108,7 @@ export const projectsData = [
       "/images/icon/mysql.svg",
     ],
   },
-  // {
-  //   title: "Sistem Informasi Akademik SDN Tegalrandu",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: siakadImg,
-  // },
+
   // {
   //   title: " UI/UX Amikom Park",
   //   description:

@@ -5,13 +5,17 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import BurstBload2 from "./burst-bload-2";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
     <section id="projects" ref={ref} className="scroll-mt-28 mb-28">
-      <SectionHeading>🚀 Projects</SectionHeading>
+      <div className="flex justify-center">
+        <SectionHeading>🚀 Projects</SectionHeading>
+        <BurstBload2 />
+      </div>
       {/* <div>
         <h1 className="text-center w-[min(100%,38rem)]">
           I am pleased to present my portfolio to you. In this portfolio, you
