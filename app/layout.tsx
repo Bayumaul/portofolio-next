@@ -10,13 +10,42 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://portofolio-bayumaul.vercel.app/"),
   title: "Bayu Maulana Ikhsan | Portfolio",
   description:
     "Bayu Maulana Ikhsan is a laravel developer with 2 years of experience.",
   author: "Bayu Maulana Ikhsan",
-  keywords: "Bayu Maulana Ikhsan, Laravel, Website, Web developer, Codeigneter",
   subject: "Bayu Maulana Ikhsan Web Developer",
   copyright: "Bayu Maulana Ikhsan",
+  keywords: [
+    "Bayu Maulana Ikhsan",
+    "Next.js",
+    "React",
+    "JavaScript",
+    "Laravel",
+    "Codeigneter",
+    "PHP",
+    "Web developer",
+  ],
+  generator: "Next.js",
+  applicationName: "Bayu Maulana Ikhsan | Portfolio",
+  referrer: "origin-when-cross-origin",
+  colorScheme: "dark",
+  creator: "Bayu Maulana Ikhsan",
+  publisher: "Bayu Maulana Ikhsan",
+  openGraph: {
+    images:
+      "https://media.licdn.com/dms/image/D5603AQEiLducKGzJdg/profile-displayphoto-shrink_200_200/0/1689780207147?e=1697068800&v=beta&t=SSbejiXasiUBRX72eknFf9gQh0q3brmGIHD3NQM_iQA",
+    description:
+      "Bayu Maulana Ikhsan is a laravel developer with 2 years of experience.",
+    author: "Bayu Maulana Ikhsan",
+  },
+  basic: {
+    title: "Bayu Maulana Ikhsan - Fullstack Engineer",
+    type: "website",
+    image:
+      "https://media.licdn.com/dms/image/D5603AQEiLducKGzJdg/profile-displayphoto-shrink_200_200/0/1689780207147?e=1697068800&v=beta&t=SSbejiXasiUBRX72eknFf9gQh0q3brmGIHD3NQM_iQA",
+  },
 };
 
 export default function RootLayout({
