@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -10,6 +10,8 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <motion.section
@@ -41,13 +43,25 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          const dataForm = { senderEmail: email, message: message };
 
+          if (email == "") {
+            toast.error("Email is Required !");
+            return;
+          }
+
+          if (message == "") {
+            toast.error("Message is Required !");
+            return;
+          }
+
+          const { data, error } = await sendEmail(dataForm);
           if (error) {
             toast.error(error);
             return;
           }
-
+          setEmail("");
+          setMessage("");
           toast.success("Email sent successfully!");
         }}
       >
@@ -58,6 +72,8 @@ export default function Contact() {
           required
           maxLength={500}
           placeholder="Your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           className="h-40 bg-white my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -65,6 +81,8 @@ export default function Contact() {
           placeholder="Your message"
           required
           maxLength={5000}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <SubmitBtn />
       </form>
