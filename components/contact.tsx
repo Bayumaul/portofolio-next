@@ -33,7 +33,7 @@ export default function Contact() {
     >
       <div className="bg-[#fbe2e3] absolute bottom-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
 
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Get In Touch</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Feel free to get in touch with me whenever you need assistance or want
