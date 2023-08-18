@@ -70,36 +70,55 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Match Schedule MPL Indonesia",
+    description:
+      "This website is a demonstration of a clone that imitates the appearance and features of the official MPL Indonesia website. It provides information similar to the actual MPL Indonesia website, including match schedules, team listings, and standings.",
+    screenshots: ["images/project/siakad/1.png", "images/project/siakad/2.png"],
+    image: "images/project/mpl/1.png",
+    tech: [
+      "/images/icon/next-js.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      "/images/icon/framer-motion.svg",
+    ],
+    demoUrl: "https://mpl-id.vercel.app/",
+    githubUrl: "https://github.com/Bayumaul/mpl-id-next",
+  },
+  {
     title: "SIAKAD SDN Tegalrandu",
     description:
       "This is a web-based application about creating report students, crud kelas, crud mata pelajaran, crud siswa, crud nilai students to report with kurikulum 2013",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: siakadImg,
+    screenshots: ["images/project/siakad/1.png", "images/project/siakad/2.png"],
+    image: "images/project/siakad/1.png",
     tech: [
       "/images/icon/bootstrap.svg",
       "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
       "/images/icon/jquery-vertical.svg",
       "/images/icon/mysql.svg",
     ],
+    demoUrl: null,
+    githubUrl: null,
   },
   {
     title: "Wartafeno",
     description:
       "Wartafeno is a website that is used to convey news from the LPMT Fenomena of UNY, this website was made using wordpress and elementor and mysql database.",
-    tags: ["Wordpress", "SQL", "Elementor", "PHP"],
-    imageUrl: wartafenoImg,
+    screenshots: ["images/project/siakad/1.png", "images/project/siakad/2.png"],
+    image: "images/project/wartefeno/1.png",
     tech: [
       "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/8/8a/Elementor_icon.svg",
       "/images/icon/mysql.svg",
     ],
+    demoUrl: "https://wartafeno.com/",
+    githubUrl: null,
   },
   {
     title: "HR-TOOLS",
     description:
       "This is HR TOOLS which is used to manage employee data, starting from personal data, employee performance appraisal work to the attendance system.",
-    tags: ["PHP", "CodeIgneter", "MySql", "JQuery", "Leaflet JS"],
-    imageUrl: hrtoolsImg,
+    image: "images/project/hr-tools/1.png",
+    screenshots: ["images/project/siakad/1.png", "images/project/siakad/2.png"],
     tech: [
       "/images/icon/bootstrap.svg",
       "/images/icon/leaflet.svg",
@@ -107,15 +126,9 @@ export const projectsData = [
       "/images/icon/jquery-vertical.svg",
       "/images/icon/mysql.svg",
     ],
+    demoUrl: null,
+    githubUrl: null,
   },
-
-  // {
-  //   title: " UI/UX Amikom Park",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: amikomImg,
-  // },
 ] as const;
 
 export const skillsData = [

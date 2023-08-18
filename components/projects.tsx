@@ -15,6 +15,11 @@ export default function Projects() {
       <div className="flex justify-center">
         <SectionHeading>🚀 Projects</SectionHeading>
         <BurstBload2 />
+        <p>
+          I've worked on a variety of projects, ranging from small MVPs to
+          full-scale applications, also developed a wide array of features and
+          functionalities in projects.
+        </p>
       </div>
       {/* <div>
         <h1 className="text-center w-[min(100%,38rem)]">
@@ -25,7 +30,7 @@ export default function Projects() {
           potential.
         </h1>
       </div> */}
-      <div className="row">
+      <div className="flex">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
