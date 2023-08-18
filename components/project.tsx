@@ -10,9 +10,8 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
-  tags,
-  imageUrl,
   tech,
+  image,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -76,10 +75,9 @@ export default function Project({
           </ul>
         </div>
 
-        <Image
-          src={imageUrl}
+        <img
+          src={image}
           alt="Project I worked on"
-          quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
                     transition 
                     group-hover:scale-[1.04]
