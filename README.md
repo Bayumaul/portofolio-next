@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+![Portfolio Website Screenshot](public/screenshot.png)
 
-First, run the development server:
+## Description
+
+This repository contains the codebase for my personal portfolio website, built using Next.js, Tailwind CSS, and Framer Motion. The website aims to showcase my projects, works, and experiences across various domains. With an appealing layout and smooth animations, the website is designed to provide an engaging experience for visitors.
+
+## Key Features
+
+- **Responsive Design:** The website has been designed with a responsive layout, allowing visitors to explore my portfolio seamlessly across various devices.
+
+- **Smooth Animations:** Leveraging Framer Motion, the website incorporates captivating and fluid animations on select elements throughout the site, enhancing the visual impression.
+
+- **Intuitive Navigation:** Clear and intuitive navigation assists visitors in easily navigating through different sections of the portfolio, including individual projects, the About Me page, and contact information.
+
+- **Detailed Project Sections:** Each project within the portfolio has a dedicated detailed page that explains its purpose, my contributions, and achieved outcomes. This aids visitors in comprehending projects comprehensively.
+
+## Installation
+
+1. **Clone Repository:** Clone this repository to your local directory using the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/Bayumaul/portofolio-next.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies:** Navigate to the newly cloned repository directory and run the following command to install all required dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Start Development Server:** Launch the development server with the following command:
 
-## Learn More
+```bash
+  npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The server will run at http://localhost:3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Website
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Visit the live portfolio website at [https://portofolio-bayumaul.vercel.app/](https://portofolio-bayumaul.vercel.app/).
 
-## Deploy on Vercel
+## Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions in the form of pull requests are highly welcomed. If you wish to make changes to this website, please follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork this repository.
+
+2. Create a branch for the feature or improvement you intend to make:
+
+```bash
+  git checkout -b new-feature
+```
+
+3. Make changes to the code.
+
+4. Commit your changes:
+
+```bash
+  git commit -m "Added new feature: feature description"
+```
+
+5. Push your branch to the remote repository:
+
+```bash
+  git push origin new-feature
+```
+
+6. Create a pull request to propose your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for visiting my portfolio repository! Feel free to reach out to me via [email](mailto:bayu.maulanaikhsan123@gmail.com) if you have any questions or wish to collaborate.
