@@ -36,6 +36,11 @@ export default function Contact() {
       <SectionHeading>Get In Touch</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
+        Additionally, I'm currently open for freelance or part-time
+        opportunities. If you have an interesting project or need extra hands on
+        deck, don't hesitate to get in touch!
+        <br />
+        <br />
         Feel free to get in touch with me whenever you need assistance or want
         to discuss anything. I'm here to help you with pleasure! 🚀
       </p>
