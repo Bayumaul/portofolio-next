@@ -69,21 +69,21 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-  {
-    title: "Ikan Me",
-    description:
-      "This website is an innovative platform designed to assist freshwater fishermen and fish farmers in the village of Berasan Mulya in marketing their products online. We are dedicated to supporting the local economy and the conservation of natural resources.",
-    screenshots: ["images/project/siakad/1.png", "images/project/siakad/2.png"],
-    image: "images/project/ikanme/1.png",
-    tech: [
-      "/images/icon/bootstrap.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
-      "/images/icon/jquery-vertical.svg",
-      "/images/icon/mysql.svg",
-    ],
-    demoUrl: "https://demo.gaspol.dev/",
-    githubUrl: null,
-  },
+  // {
+  //   title: "Ikan Me",
+  //   description:
+  //     "This website is an innovative platform designed to assist freshwater fishermen and fish farmers in the village of Berasan Mulya in marketing their products online. We are dedicated to supporting the local economy and the conservation of natural resources.",
+  //   screenshots: ["images/project/siakad/1.png", "images/project/siakad/2.png"],
+  //   image: "images/project/ikanme/1.png",
+  //   tech: [
+  //     "/images/icon/bootstrap.svg",
+  //     "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+  //     "/images/icon/jquery-vertical.svg",
+  //     "/images/icon/mysql.svg",
+  //   ],
+  //   demoUrl: "https://demo.gaspol.dev/",
+  //   githubUrl: null,
+  // },
   {
     title: "Match Schedule MPL Indonesia",
     description:
