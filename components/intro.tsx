@@ -67,7 +67,7 @@ export default function Intro() {
       >
         <span className="font-bold">2 years</span> of experience in fullstack
         development, using{" "}
-        <span className="font-bold">Laravel and Codeigneter</span> for
+        <span className="font-bold">Laravel and Codeigniter</span> for
         developing a website and web applications.
         {/* I enjoy building <span className="italic">sites & apps</span>.  */}
         {/* My focus is

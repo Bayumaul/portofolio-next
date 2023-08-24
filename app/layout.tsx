@@ -24,7 +24,7 @@ export const metadata = {
     "React",
     "JavaScript",
     "Laravel",
-    "Codeigneter",
+    "Codeigniter",
     "PHP",
     "Web developer",
   ],
