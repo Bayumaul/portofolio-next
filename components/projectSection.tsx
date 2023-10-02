@@ -45,7 +45,7 @@ const ProjectSection: React.FC = () => {
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const handleProjectClick = (project: Project) => {
+  const handleProjectClick = (project: any) => {
     setSelectedProject(project);
   };
 
@@ -53,7 +53,6 @@ const ProjectSection: React.FC = () => {
     setSelectedProject(null);
   };
 
-  // const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
   const handleScreenshotClick = (screenshot: string) => {
