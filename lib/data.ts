@@ -150,7 +150,7 @@ export const projectsData = [
       "Standings: Shows the current standings of the teams in the league, indicating their performance.",
       "Past Match Results: Displays the results and summaries of previous matches in the MPL Indonesia league.",
     ],
-    languages: ["Next JS 14", "Tailwind CSS 3", "Framer Motion", "Typescript"],
+    languages: ["Next JS 13", "Tailwind CSS 3", "Framer Motion", "Typescript"],
   },
   {
     title: "SIAKAD SDN Tegalrandu",
