@@ -9,11 +9,23 @@ import { FaGithub, FaLink, FaArrowDown } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import SectionHeading from "./section-heading";
 
+// interface Project {
+//   title: string;
+//   description: string;
+//   tech: string[];
+//   image: string;
+// }
+
 interface Project {
   title: string;
   description: string;
   tech: string[];
   image: string;
+  screenshots: string[];
+  features: string[];
+  languages: string[];
+  demoUrl?: string;
+  githubUrl?: string;
 }
 
 const ProjectSection: React.FC = () => {
@@ -31,6 +43,26 @@ const ProjectSection: React.FC = () => {
     ? projectsData
     : projectsData.slice(0, 4);
 
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
+  // const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [zoomedImage, setZoomedImage] = useState<string | null>(null);
+
+  const handleScreenshotClick = (screenshot: string) => {
+    setZoomedImage(screenshot);
+  };
+
+  const handleCloseZoomedImage = () => {
+    setZoomedImage(null);
+  };
   return (
     <motion.section
       id="projects"
@@ -50,11 +82,13 @@ const ProjectSection: React.FC = () => {
           {displayedProjects.map((project, index) => (
             <motion.div
               key={index}
+              onClick={() => handleProjectClick(project)}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.9 }}
               transition={{ duration: 0.6, delay: 0.1 * index }}
               exit={{ opacity: 0, scale: 0.9 }}
               whileHover={{ scale: 1.05 }}
+              style={{ cursor: "pointer" }}
               className="bg-white dark:bg-[#192D3E] text-black  border-white dark:border-[#192D3E] border-solid border-8 rounded-xl shadow-lg hover:shadow-xl overflow-hidden"
             >
               <img
@@ -107,7 +141,7 @@ const ProjectSection: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        {/* {!showAllProjects && (
+        {!showAllProjects && (
           <div className="flex justify-center mt-10">
             <button
               onClick={toggleShowAllProjects}
@@ -117,8 +151,98 @@ const ProjectSection: React.FC = () => {
               <FaArrowDown className="text-xs opacity-70 transition-all" />{" "}
             </button>
           </div>
-        )} */}
+        )}
       </div>
+      {/* Modal for detailed description */}
+      {selectedProject && (
+        <div className="modal-overlay flex items-center justify-center">
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center z-100"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            {" "}
+            <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] overflow-y-scroll w-full mx-4 my-8 rounded-xl shadow-lg relative">
+              <button
+                onClick={handleCloseModal}
+                className="absolute top-4 right-4 text-gray-600 dark:text-gray-200 hover:text-gray-700"
+              >
+                <span className="text-xl">&times;</span>
+              </button>
+              <h2 className="text-xl font-semibold mb-2 dark:text-white">
+                {selectedProject.title}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-200 mb-4 text-justify">
+                {selectedProject.description}
+              </p>
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold mb-2 dark:text-white">
+                  Features I Worked On:
+                </h3>
+                <ul className="list-disc list-inside">
+                  {selectedProject.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 dark:text-white">
+                Click the image to enlarge
+              </h4>
+              <div className="flex space-x-4 flex-wrap mb-4">
+                {selectedProject.screenshots.map((screenshot, index) => (
+                  <img
+                    key={index}
+                    src={screenshot}
+                    alt={`Screenshot ${index + 1}`}
+                    className="w-32 h-32 object-cover rounded-md cursor-pointer mb-4"
+                    onClick={() => handleScreenshotClick(screenshot)}
+                  />
+                ))}
+              </div>
+              <h4 className="text-lg font-semibold mb-2 dark:text-white">
+                Language and Tools
+              </h4>
+              <div className="flex justify-between items-end">
+                <div className="flex space-x-2">
+                  {selectedProject.languages.map((language, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 bg-gray-200 text-gray-800 rounded-full text-sm"
+                    >
+                      {language}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
+      {zoomedImage && (
+        <div className="image-modal-overlay flex items-center justify-center">
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[1000px] w-full mx-4 my-8 rounded-xl shadow-lg relative">
+              <button
+                onClick={handleCloseZoomedImage}
+                className="absolute top-4 right-4 text-gray-600 dark:text-gray-200 hover:text-gray-700"
+              >
+                <span className="text-xl">&times;</span>
+              </button>
+              <div className="w-full h-[600px] mb-4 overflow-hidden">
+                <img
+                  src={zoomedImage}
+                  alt="Zoomed Screenshot"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </motion.section>
   );
 };

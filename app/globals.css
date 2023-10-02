@@ -49,3 +49,39 @@ html.dark {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
+
+/* CSS */
+.blur-background {
+  backdrop-filter: blur(8px); /* Menambahkan efek blur pada latar belakang */
+  background: rgba(0, 0, 0, 0.5); /* Menambahkan latar belakang transparan */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; /* Memastikan z-index lebih tinggi dari elemen lain */
+}
+
+/* CSS */
+.modal-overlay {
+  backdrop-filter: blur(8px); /* Menambahkan efek blur pada latar belakang */
+  background: rgba(0, 0, 0, 0.5); /* Menambahkan latar belakang transparan */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; /* Memastikan z-index lebih tinggi dari elemen lain */
+}
+
+/* CSS */
+.image-modal-overlay {
+  backdrop-filter: blur(8px); /* Menambahkan efek blur pada latar belakang */
+  background: rgba(0, 0, 0, 0.5); /* Menambahkan latar belakang transparan */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500; /* Memastikan z-index lebih tinggi dari elemen lain */
+}
