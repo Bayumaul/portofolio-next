@@ -60,6 +60,29 @@ export default function Contact() {
             return;
           }
 
+          const containsTest = /test/i.test(email);
+          // || /test/i.test(message);
+
+          if (containsTest) {
+            toast.error(
+              "Mohon maaf, input tidak valid. Harap berikan email dan pesan yang benar.\n\nWesbite sudah berjalan dengan baik jadi tidak perlu testing lagi 😁",
+              {
+                duration: 6000,
+              }
+            );
+            return;
+          }
+          const isValidEmail =
+            email.length > 4 &&
+            message.length > 9 &&
+            email.endsWith("@gmail.com");
+
+          if (!isValidEmail) {
+            toast.error(
+              "Please provide a valid email (minimum 5 characters, ending with @gmail.com) and message minimum 10 characters."
+            );
+            return;
+          }
           const { data, error } = await sendEmail(dataForm);
           if (error) {
             toast.error(error);
