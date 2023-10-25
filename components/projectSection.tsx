@@ -161,6 +161,7 @@ const ProjectSection: React.FC = () => {
             animate={{ opacity: 1 }}
           >
             {" "}
+            {/* <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] overflow-y-scroll w-full mx-4 my-8 rounded-xl shadow-lg relative"> */}
             <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] overflow-y-scroll w-full mx-4 my-8 rounded-xl shadow-lg relative">
               <button
                 onClick={handleCloseModal}
@@ -171,7 +172,8 @@ const ProjectSection: React.FC = () => {
               <h2 className="text-xl font-semibold mb-2 dark:text-white">
                 {selectedProject.title}
               </h2>
-              <p className="text-gray-600 dark:text-gray-200 mb-4 text-justify">
+              {/* <p className="modal-content text-gray-600 dark:text-gray-200 mb-4 text-justify max-h-60vh overflow-y-scroll"> */}
+              <p className="modal-content text-gray-600 dark:text-gray-200 mb-4 text-justify max-h-60vh overflow-y-scroll">
                 {selectedProject.description}
               </p>
               <div className="mb-4">
