@@ -9,7 +9,7 @@ import Skills from "@/components/skills";
 import MaintenanceMode from "../components/MaintenanceMode";
 
 export default function Home() {
-  const isMaintenanceMode = true; // Atur ini berdasarkan kondisi maintenance
+  const isMaintenanceMode = false;
 
   if (isMaintenanceMode) {
     return <MaintenanceMode />;
@@ -23,7 +23,7 @@ export default function Home() {
       {/* <Projects /> */}
       <ProjectSection />
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       <Contact />
     </main>
   );
