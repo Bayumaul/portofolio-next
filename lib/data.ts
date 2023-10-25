@@ -106,7 +106,7 @@ export const projectsData = [
       "images/project/ikanme/2.png",
       "images/project/ikanme/3.png",
       "images/project/ikanme/4.png",
-      "images/project/ikanme/5.png",
+      // "images/project/ikanme/5.png",
       "images/project/ikanme/6.png",
     ],
     image: "images/project/ikanme/1.png",
