@@ -179,7 +179,10 @@ const ProjectSection: React.FC = () => {
                 </h3>
                 <ul className="list-disc list-inside">
                   {selectedProject.features.map((feature, index) => (
-                    <li key={index} className="text-gray-600">
+                    <li
+                      key={index}
+                      className="text-gray-600 dark:text-gray-200"
+                    >
                       {feature}
                     </li>
                   ))}
