@@ -85,7 +85,7 @@ const ProjectSection: React.FC = () => {
               exit={{ opacity: 0, scale: 0.9 }}
               whileHover={{ scale: 1.05 }}
               style={{ cursor: "pointer" }}
-              className="bg-white dark:bg-[#192D3E] text-black  border-white dark:border-[#192D3E] border-solid border-8 rounded-xl shadow-lg hover:shadow-xl overflow-hidden"
+              className="bg-white dark:bg-[#232D3F] text-black  border-white dark:border-[#232D3F] border-solid border-8 rounded-xl shadow-lg hover:shadow-xl overflow-hidden"
             >
               <img
                 src={project.image}
@@ -158,7 +158,7 @@ const ProjectSection: React.FC = () => {
             animate={{ opacity: 1 }}
           >
             {" "}
-            <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] w-full mx-4 my-8 rounded-xl shadow-lg relative overflow-y-scroll max-h-[80vh]">
+            <div className="bg-white dark:bg-[#232D3F] p-8 max-w-[900px] w-full mx-4 my-8 rounded-xl shadow-lg relative overflow-y-scroll max-h-[80vh]">
               <button
                 onClick={handleCloseModal}
                 className="absolute top-4 right-4 text-gray-600 dark:text-gray-200 hover:text-gray-700"
