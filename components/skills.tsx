@@ -72,7 +72,7 @@ export default function Skills() {
               viewport={{
                 once: true,
               }}
-              className="relative flex justify-center z-30 md:w-[144px] w-[70px] md:h-[140px] h-[71px] rounded-md bg-white dark:bg-[#192D3E] md:p-5 p-3 shadow-[8px_8px_0_0_#000000] dark:shadow-[8px_8px_0_0_#334155] dark:hover:shadow-[15px_15px_0_0_#334155] hover:shadow-[15px_15px_0_0_#000000] transition-shadow"
+              className="relative flex justify-center md:w-[144px] w-[70px] md:h-[140px] h-[71px] rounded-md bg-white dark:bg-[#192D3E] md:p-5 p-3 shadow-[8px_8px_0_0_#000000] dark:shadow-[8px_8px_0_0_#334155] dark:hover:shadow-[15px_15px_0_0_#334155] hover:shadow-[15px_15px_0_0_#000000] transition-shadow"
             >
               <Image
                 src={skill.imgUrl}

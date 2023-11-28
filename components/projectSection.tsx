@@ -9,13 +9,6 @@ import { FaGithub, FaLink, FaArrowDown } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import SectionHeading from "./section-heading";
 
-// interface Project {
-//   title: string;
-//   description: string;
-//   tech: string[];
-//   image: string;
-// }
-
 interface Project {
   title: string;
   description: string;
@@ -47,10 +40,12 @@ const ProjectSection: React.FC = () => {
 
   const handleProjectClick = (project: any) => {
     setSelectedProject(project);
+    document.body.style.overflow = "hidden";
   };
 
   const handleCloseModal = () => {
     setSelectedProject(null);
+    document.body.style.overflow = "auto";
   };
 
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
@@ -62,6 +57,7 @@ const ProjectSection: React.FC = () => {
   const handleCloseZoomedImage = () => {
     setZoomedImage(null);
   };
+
   return (
     <motion.section
       id="projects"
@@ -77,7 +73,8 @@ const ProjectSection: React.FC = () => {
           <SectionHeading>🚀 Projects</SectionHeading>
           <BurstBload2 />
         </div>
-        <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+        <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {displayedProjects.map((project, index) => (
             <motion.div
               key={index}
@@ -144,7 +141,7 @@ const ProjectSection: React.FC = () => {
           <div className="flex justify-center mt-10">
             <button
               onClick={toggleShowAllProjects}
-              className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+              className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-md outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
             >
               Load More
               <FaArrowDown className="text-xs opacity-70 transition-all" />{" "}
@@ -156,13 +153,12 @@ const ProjectSection: React.FC = () => {
       {selectedProject && (
         <div className="modal-overlay flex items-center justify-center">
           <motion.div
-            className="fixed inset-0 flex items-center justify-center z-100"
+            className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
             {" "}
-            {/* <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] overflow-y-scroll w-full mx-4 my-8 rounded-xl shadow-lg relative"> */}
-            <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] overflow-y-scroll w-full mx-4 my-8 rounded-xl shadow-lg relative">
+            <div className="bg-white dark:bg-[#192D3E] p-8 max-w-[900px] w-full mx-4 my-8 rounded-xl shadow-lg relative overflow-y-scroll max-h-[80vh]">
               <button
                 onClick={handleCloseModal}
                 className="absolute top-4 right-4 text-gray-600 dark:text-gray-200 hover:text-gray-700"
@@ -172,17 +168,20 @@ const ProjectSection: React.FC = () => {
               <h2 className="text-xl font-semibold mb-2 dark:text-white">
                 {selectedProject.title}
               </h2>
-              {/* <p className="modal-content text-gray-600 dark:text-gray-200 mb-4 text-justify max-h-60vh overflow-y-scroll"> */}
-              <p className="modal-content text-gray-600 dark:text-gray-200 mb-4 text-justify max-h-60vh overflow-y-scroll">
-                {selectedProject.description}
-              </p>
+              <div className=" relative overflow-y-auto">
+                <p className="modal-content text-gray-600 dark:text-gray-200 mb-4 text-justify max-h-60vh">
+                  {selectedProject.description}
+                </p>
+              </div>
               <div className="mb-4">
                 <h3 className="text-lg font-semibold mb-2 dark:text-white">
                   Features I Worked On:
                 </h3>
                 <ul className="list-disc list-inside">
                   {selectedProject.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li key={index} className="text-gray-600">
+                      {feature}
+                    </li>
                   ))}
                 </ul>
               </div>
