@@ -30,7 +30,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/images/profile.png"
+              src="/images/profile_2.jpg"
               alt="Bayu Maulana Ikhsan"
               width="192"
               height="192"
