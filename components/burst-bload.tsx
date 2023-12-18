@@ -15,6 +15,8 @@ export default function BurstBload() {
         }}
         alt="about shape bayu maulana ikhsan"
         className="-z-10 top-0 right-4 md:w-auto w-6"
+        width="24"
+        height="24"
       />
     </div>
   );

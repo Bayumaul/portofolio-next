@@ -91,6 +91,8 @@ const ProjectSection: React.FC = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-49 object-cover"
+                width="100%" // Atur lebar sesuai kebutuhan atau gunakan persentase
+                height="196" // Atur tinggi sesuai kebutuhan
               />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2 dark:text-white">
@@ -106,7 +108,9 @@ const ProjectSection: React.FC = () => {
                         key={techIndex}
                         src={tech}
                         alt={`Tech ${techIndex}`}
-                        className="h-6 "
+                        className="h-6"
+                        width="24"
+                        height="24"
                       />
                     ))}
                   </div>
