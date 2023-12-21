@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const baseUrlMeta = `${new URL("https://bayumaulanaikhsan.my.id/")}`;
 export const metadata = {
   metadataBase: new URL("https://bayumaulanaikhsan.my.id/"),
   title: "Bayu Maulana Ikhsan | Portfolio",
@@ -33,6 +33,12 @@ export const metadata = {
     "website development services",
     "IT assignment services",
     "Information Systems",
+    "Jasa buat website",
+    "joki tugas IT",
+    "Joki buat website",
+    "Joki Coding",
+    "Joki coding jogja",
+    "joki murah",
   ],
   generator: "Next.js",
   applicationName: "Bayu Maulana Ikhsan | Portfolio",
@@ -40,11 +46,24 @@ export const metadata = {
   colorScheme: "dark",
   creator: "Bayu Maulana Ikhsan",
   publisher: "Bayu Maulana Ikhsan",
+  language: "id",
+  geo: {
+    country: "ID",
+    placename: "Yogyakarta",
+  },
   openGraph: {
     images: [
       {
-        url: "https://media.licdn.com/dms/image/D5603AQEiLducKGzJdg/profile-displayphoto-shrink_200_200/0/1689780207147?e=1697068800&v=beta&t=SSbejiXasiUBRX72eknFf9gQh0q3brmGIHD3NQM_iQA",
+        url: `${baseUrlMeta}images/profile_2.jpg`,
         alt: "Bayu Maulana Ikhsan",
+      },
+      {
+        url: `${baseUrlMeta}images/project/cekresi/1.png`,
+        alt: "Portofolio Cek Resi CGN",
+      },
+      {
+        url: `${baseUrlMeta}images/project/ikanme/1.png`,
+        alt: "Portofolio Ikan Me",
       },
     ],
     description:
@@ -55,12 +74,11 @@ export const metadata = {
     title: "Bayu Maulana Ikhsan - Fullstack Engineer",
     type: "website",
     image: {
-      url: "https://media.licdn.com/dms/image/D5603AQEiLducKGzJdg/profile-displayphoto-shrink_200_200/0/1689780207147?e=1697068800&v=beta&t=SSbejiXasiUBRX72eknFf9gQh0q3brmGIHD3NQM_iQA",
+      url: `${baseUrlMeta}images/profile_2.jpg`,
       alt: "Bayu Maulana Ikhsan",
     },
   },
 };
-
 export default function RootLayout({
   children,
 }: {
