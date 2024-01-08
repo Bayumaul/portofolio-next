@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import { FaGithub, FaLink, FaArrowDown } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import SectionHeading from "./section-heading";
+import SwiperComponent from "./swipper";
 
 interface Project {
   title: string;
@@ -87,10 +88,16 @@ const ProjectSection: React.FC = () => {
               style={{ cursor: "pointer" }}
               className="bg-white dark:bg-[#232D3F] text-black  border-white dark:border-[#232D3F] border-solid border-8 rounded-xl shadow-lg hover:shadow-xl overflow-hidden"
             >
+              {/* <span
+                className="absolute top-2 right-2 text-white bg-slate-900 px-2 py-1 rounded-bl-lg font-semibold z-10"
+              >
+                Freelance
+              </span> */}
+
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-49 object-cover"
+                className="w-full h-49 object-cover relative"
                 width="100%" // Atur lebar sesuai kebutuhan atau gunakan persentase
                 height="196" // Atur tinggi sesuai kebutuhan
               />
@@ -195,26 +202,19 @@ const ProjectSection: React.FC = () => {
               <h4 className="text-lg font-semibold mb-2 dark:text-white">
                 Click the image to enlarge
               </h4>
-              <div className="flex space-x-4 flex-wrap mb-4">
-                {selectedProject.screenshots.map((screenshot, index) => (
-                  <img
-                    key={index}
-                    src={screenshot}
-                    alt={`Screenshot ${index + 1}`}
-                    className="w-32 h-32 object-cover rounded-md cursor-pointer mb-4"
-                    onClick={() => handleScreenshotClick(screenshot)}
-                  />
-                ))}
-              </div>
+              <SwiperComponent
+                screenshots={selectedProject.screenshots}
+                onScreenshotClick={handleScreenshotClick}
+              />
               <h4 className="text-lg font-semibold mb-2 dark:text-white">
                 Language and Tools
               </h4>
               <div className="flex justify-between items-end">
-                <div className="flex space-x-2">
+                <div className="flex flex-wrap space-x-2">
                   {selectedProject.languages.map((language, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 bg-gray-200 text-gray-800 rounded-full text-sm"
+                      className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-gray-900 mb-2"
                     >
                       {language}
                     </span>

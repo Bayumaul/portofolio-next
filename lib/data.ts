@@ -6,6 +6,10 @@ import wartafenoImg from "@/public/images/project/wartefeno/1.png";
 import siakadImg from "@/public/images/project/siakad/1.png";
 import amikomImg from "@/public/images/project/amikom/1.png";
 import hrtoolsImg from "@/public/images/project/hr-tools/1.png";
+import bkadImg from "@/public/images/company/bkad.png";
+import mdpImg from "@/public/images/company/mdp.jpg";
+import teImg from "@/public/images/company/te.png";
+import zenioraImg from "@/public/images/company/zeniora.png";
 
 export const links = [
   {
@@ -39,7 +43,9 @@ export const experiencesData = [
     location: "BKAD Kabupaten Sleman",
     description:
       "Developing and overcoming user problems of Sistem Informasi Keuangan Daerah (SIKD) and Sistem Pengajuan Surat Rekening (SPSR) related to applicable policies of Sleman including, troubleshooting, disaster recovery planning & execution.",
+    iconUrl: bkadImg,
     icon: React.createElement(CgWorkAlt),
+    color: "#accbe1",
     date: "Jan 2023 - Present",
   },
   {
@@ -47,7 +53,9 @@ export const experiencesData = [
     location: "PT Mandala Dwipantara Proteksi",
     description:
       "Developing and overcoming user problems of NRE-CORE related to applicable policies of PT. Reasuransi Nasional Indonesia including, troubleshooting, disaster recovery planning & execution.",
+    iconUrl: mdpImg,
     icon: React.createElement(CgWorkAlt),
+    color: "#accbe1",
     date: "Mar 2022 - Des 2022",
   },
   {
@@ -55,7 +63,9 @@ export const experiencesData = [
     location: "PT. Time Excelindo",
     description:
       "Develop features in HR TOOLS, including: fixing bugs, developing attendance with shifts and distances, applying for leave and overtime permits, and developing employee assessments",
+    iconUrl: teImg,
     icon: React.createElement(CgWorkAlt),
+    color: "#a2d2ff",
     date: "Aug 2021 - Feb 2022",
   },
   {
@@ -63,7 +73,9 @@ export const experiencesData = [
     location: "PT Zeniora Edukasi Teknologi",
     description:
       "Contribute to the development, fixing bugs, discussion about the new fiture in website.",
+    iconUrl: zenioraImg,
     icon: React.createElement(CgWorkAlt),
+    color: "#a2d2ff",
     date: "Jul 2021 - Sep 2021",
   },
 ] as const;

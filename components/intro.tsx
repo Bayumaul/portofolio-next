@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
 import { useSectionInView } from "@/lib/hooks";
+import { FaDiscord } from "react-icons/fa";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -134,6 +135,13 @@ export default function Intro() {
           target="_blank"
         >
           <BsInstagram />
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://discord.gg/MStuWatV"
+          target="_blank"
+        >
+          <FaDiscord />
         </a>
       </motion.div>
     </section>
