@@ -40,7 +40,7 @@ The server will run at http://localhost:3000.
 
 ## Live Website
 
-Visit the live portfolio website at [https://portofolio-bayumaul.vercel.app/](https://portofolio-bayumaul.vercel.app/).
+Visit the live portfolio website at https://bayumaulanaikhsan.my.id/](https://bayumaulanaikhsan.my.id/).
 
 ## Contribution
 
