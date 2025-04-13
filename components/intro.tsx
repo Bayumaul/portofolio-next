@@ -65,7 +65,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">2 years</span> of experience in fullstack
+        <span className="font-bold">3 years</span> of experience in fullstack
         development, using{" "}
         <span className="font-bold">Laravel and Codeigniter</span> for
         developing a website and web applications.
